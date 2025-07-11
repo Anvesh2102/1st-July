@@ -1,3 +1,4 @@
+
 // console.log("Hello World");
 // function sayHello(){
 //     console.log("hello from js")
@@ -107,24 +108,25 @@
 // });
 //write a .then block to excecute with out error
 
-function getData(dataid){
-    return new Promise ((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log("Fetching data for id:",dataid);
-            resolve("success");
-        },2000);//use 2 sec for quick testing
-    });
-}
-let result=getData(123);
-result;
-getData(101).then(result=>{
-    console.log("First fetch:",result);
-    return getData(102);
-})
-.then(result=>{
-    console.log("Second fetch:",result);
-    return getData(103)
-})
-.catch(error=>{
-    console.error("Fetching failed..!",error);
-});
+// function getData(dataid){
+//     return new Promise ((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("Fetching data for id:",dataid);
+//             resolve("success");
+//         },2000);//use 2 sec for quick testing
+//     });
+// }
+// let result=getData(123);
+// result;
+// getData(101).then(result=>{
+//     console.log("First fetch:",result);
+//     return getData(102);
+// })
+// .then(result=>{
+//     console.log("Second fetch:",result);
+//     return getData(103)
+// })
+// .catch(error=>{
+//     console.error("Fetching failed..!",error);
+// });
+
